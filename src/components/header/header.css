@@ -1,0 +1,84 @@
+header {
+  height: 100vh;
+  padding-top: 7rem;
+  overflow: hidden;
+}
+
+.header_container {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.header_container h5 {
+  font-size: 1.5rem;
+}
+.name {
+  font-family: "Cookie", cursive;
+  font-size: 10rem;
+}
+
+.title {
+  letter-spacing: 15px;
+}
+/* ============CTA============= */
+.cta {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+/* ============HEADER SOCIALS============= */
+.header_socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+}
+
+.header_socials::after {
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
+}
+
+/* ============SCROLL DOWN============= */
+.scroll_down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* ============MEDIA QUERIES (MEDIUM DEVICE)============ */
+@media screen and (max-width: 1024px) {
+  header {
+    height: 68vh;
+  }
+}
+
+/* ============MEDIA QUERIES (SMALL DEVICE)============ */
+@media screen and (max-width: 600px) {
+  header {
+    height: 65vh;
+  }
+  .header_socials,
+  .scroll_down {
+    display: none;
+  }
+
+  .name {
+    font-size: 5rem;
+  }
+
+  .title {
+    letter-spacing: normal;
+  }
+}
